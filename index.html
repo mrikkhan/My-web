@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
     <nav>
         <div class="logo">Portfolio.</div>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skill</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
     </nav>
     <div class="container">
         <div class="pic">
@@ -35,5 +43,16 @@
         </div>
         
     </div>
+
+<script>
+
+var navLinks = document.getElementById("navlinks");
+function  showMenu(){
+  navLinks.style.right = "0";
+}
+function  hideMenu(){
+  navLinks.style.right = "-200px";
+}
+      </script>
 </body>
 </html>
