@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(#a9f1df, #ffbbbb);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .first img {
+  width: 500px;
+  height: 500px;
+  padding: 0 50px;
+  margin: 0 50px;
+  animation: up 3s ease-in-out infinite;
+  animation-delay: 2s;
+  border-radius: 20px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+.container .second {
+  animation: same 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.container .second h1 {
+  font-size: 45px;
+  padding: 0 0 10px;
+}
+.container .second h5 {
+  font-size: 30px;
+  padding: 0 0 10px 0;
+}
+.container .second h5 span {
+  color: rgb(67, 5, 133);
+}
+.container .second p {
+  font-size: 20px;
+  padding: 20px 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container .second button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: rgb(67, 5, 133);
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid rgb(67, 5, 133);
+}
+.container .second button:hover {
+  color: rgb(67, 5, 133);
+  border: 2px solid rgb(67, 5, 133);
+  background: transparent;
+}
+
+@keyframes same {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1000px) {
+  .container .first img {
+    width: 300px;
+    height: 300px;
+    padding: 0 30px;
+    margin: 0 30px;
+  }
+  .container .second h1 {
+    font-size: 30px;
+    padding: 0 0 10px;
+  }
+  .container .second h5 {
+    font-size: 20px;
+    padding: 0 0 5px 0;
+  }
+  .container .second p {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .container .second button {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 950px) {
+  .container .first img {
+    width: 300px;
+    height: 300px;
+    padding: 0 30px;
+    margin: 0 30px;
+  }
+  .container .second h1 {
+    font-size: 25px;
+    padding: 0 0 10px;
+  }
+  .container .second h5 {
+    font-size: 17px;
+    padding: 0 0 5px 0;
+  }
+  .container .second p {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  .container .second button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 670px) {
+  .container .first img {
+    width: 300px;
+    height: 300px;
+    padding: 0 20px;
+    margin: 0 20px;
+  }
+  .container .second h1 {
+    font-size: 20px;
+    padding: 0 0 5px;
+  }
+  .container .second h5 {
+    font-size: 15px;
+    padding: 0 0 5px 0;
+  }
+  .container .second p {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  .container .second button {
+    padding: 5px 8px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 540px) {
+  .first {
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;
+    margin-top: 30px;
+  }
+  .container .first img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .container {
+    display: block;
+  }
+  .second {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .container .second h1 {
+    font-size: 20px;
+    padding: 0 50px 5px;
+  }
+  .container .second h5 {
+    font-size: 15px;
+    padding: 0 0 5px 50px;
+  }
+  .container .second p {
+    font-size: 12px;
+    padding: 5px 50px;
+  }
+  .container .second button {
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+}

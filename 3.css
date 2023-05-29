@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(#a9f1df, #ffbbbb);
+    background-repeat: no-repeat;
+}
+.service{
+    width: 100%;
+}
+.title h2{
+    color: rgb(67, 5, 133);
+    font-size: 75px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 280px;
+    width: 280px;
+    padding: 20px 35px;
+    background: linear-gradient(#6ee4c6, #f69f9f);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    animation: lame 3s ease-in-out infinite;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),15px 15px 15px rgba(0, 0, 0, 0.1), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 5px 5px 5px rgba(255, 255, 255, 0.1);
+
+}
+.card img{
+    width: 70px;
+    padding: 0 0 10px 0;
+}
+
+h5{
+    color: rgb(67, 5, 133);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #1a1818;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background: rgb(67, 5, 133);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(67, 5, 133);
+    cursor: pointer;
+}
+
+@keyframes lame {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:1140px){
+    .card{
+        height: 280px;
+        width: 200px;
+        padding: 20px 20px;
+        margin: 10px;
+        
+    }
+    .card .button{
+        background: rgb(67, 5, 133);
+        color: #fff;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 5px 10px;
+    }
+    .card img{
+        width: 50px;
+        padding: 0 0 7px 0;
+    }
+    .title h2{
+        font-size: 55px;
+        margin: 20px ;
+        text-align: center;
+    }
+}
+@media (max-width:780px){
+    
+    .box{
+        display: block;
+    }
+    .card{
+        height: 280px;
+        width: 300px;
+        padding: 30px 30px;
+        margin: 50px 180px;
+    }
+}
